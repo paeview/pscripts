@@ -14,6 +14,6 @@ curl -SL -o upgrade-net6.sh https://github.com/eagerview/proxy-scripts/releases/
 ** NOTE ARMBIAN **
 
 If dns not link, then use command
-sudo rm /etc/resolv.conf
-sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
+sudo rm /etc/resolv.conf </br>
+sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf </br>
 sudo resolvconf -u
