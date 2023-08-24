@@ -12,6 +12,13 @@ curl -SL -o upgrade-net6.sh https://github.com/eagerview/proxy-scripts/releases/
 
 
 ** NOTE ARMBIAN **
+First open the nm conf file /etc/NetworkManager/NetworkManager.conf:
+
+sudo vim /etc/NetworkManager/NetworkManager.conf
+And add this to the [main] section:
+
+dns=none
+rc-manager=unmanaged
 
 If dns not link, then use command </br>
 sudo rm /etc/resolv.conf </br>
